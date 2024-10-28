@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Beleren';
+    src: url('fonts/beleren-bold.ttf') format(truetype);
+}
+* {
+    font-family: 'Beleren', sans-serif;
+}
+body {
+    background-image: linear-gradient(to right, #5f92ff, #9be3ff);
+    background-size: cover; 
+    text-align: center;
+    margin: 50px;
+}
+.players-container {
+    display: flex;
+    justify-content: center;
+}
+.player {
+    margin: 20px;
+    border: 2px solid #000;
+    padding: 20px;
+    border-radius: 5px;
+}
+.life {
+    font-size: 50px;
+    margin: 20px;
+}
+button {
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px;
+}
+input {
+    font-size: 20px;
+    width: 120px;
+    margin: 10px;
+    text-align: left;
+}

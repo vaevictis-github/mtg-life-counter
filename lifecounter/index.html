@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcador de Vida - Magic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>MTG: Life Counter</h1>
+
+    <!-- Input único para definir a vida inicial de ambos os jogadores -->
+    <input type="number" id="initialLife" placeholder="Vida inicial">
+
+    <!-- Container dos jogadores, usando flexbox -->
+    <div class="players-container">
+        <div class="player" id="player1">
+            <h2>Marcus</h2>
+            <button onclick="adjustLife(1, 10)">+10</button>
+            <button onclick="adjustLife(1, 1)">+1</button>
+            <div class="life" id="life1">?</div>
+            <button onclick="adjustLife(1, -1)">-1</button>
+            <button onclick="adjustLife(1, -10)">-10</button>
+        </div>
+
+        <div class="player" id="player2">
+            <h2>Ronny</h2>
+            <button onclick="adjustLife(2, 10)">+10</button>
+            <button onclick="adjustLife(2, 1)">+1</button>
+            <div class="life" id="life2">?</div>
+            <button onclick="adjustLife(2, -1)">-1</button>
+            <button onclick="adjustLife(2, -10)">-10</button>
+        </div>
+    </div>
+
+    <button onclick="setInitialLife()">Iniciar Jogo</button>
+    <button onclick="resetGame()">Resetar Jogo</button>
+    <script src="app.js"></script>
+</body>
+</html>
